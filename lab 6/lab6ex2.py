@@ -23,9 +23,9 @@ class rekt(Turtle):
 			print("oh my gahhhh")
 
 			
-rect_1 = rekt(37,50,4,76)
+rect_1 = rekt(10,10,10,10)
 
-rect_2 = rekt(-77,-790,-876,-87)
+rect_2 = rekt(-100,-100,-100,-100)
 rect_1.getrekt()
 rect_2.getrekt()
 
