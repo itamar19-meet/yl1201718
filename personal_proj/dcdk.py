@@ -44,10 +44,9 @@ class my_Ball(Turtle):
 			self.dy = -self.dy
 
 
-ball_a = my_Ball(0,0,3,3,10)
-ball_b = my_Ball(3,3,3,3,14)
-def collide():
-	if(ball_a.rad+ball_b.rad)>sqrt( (ball_a.x - ball_b.x)**2 + (ball_a.y - ball_b.y)**2 ):
+
+def collide(ball_a,ball_b):
+	if(ball_a.rad+ball_b.rad)>sqrt( (ball_a.x - ball_b.x)**2 + sqrt((ball_a.y - ball_b.y)**2 )):
 		return True
 	else:
 		return False
