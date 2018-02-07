@@ -8,11 +8,13 @@ ht()
 class my_Ball(Turtle):   
 	def __init__(self,x,y,dx,dy,rad):
 		Turtle.__init__(self)
-		self.x = x
-		self.y = y
+		self.penup()
+		self.goto(x,y)
+
 		self.dx = dx
 		self.dy = dy
 		self.rad = rad
+		self.shapesize(rad/10)
 		self.shape("circle")
 		r = randint(0,255)
 		g = randint(0,255)
